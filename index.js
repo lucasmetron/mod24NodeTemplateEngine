@@ -11,7 +11,7 @@ let user = {
 function render(data, obj) {
 
     for (let key in obj) {
-        data = data.replace(`{{{${key}}}}`, obj[key]);
+        data = data.replace(`{{{${key}}}}`, obj[key]); // replace é uma função que o 1 parametro procura no HTML algo com o mesmo nome que foi passado e subistiu pelo 2 parametro.
     }
 
 
