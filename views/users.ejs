@@ -9,8 +9,17 @@
 </head>
 
 <body>
-    <h1>Lucas Rosa</h1>
-    <h3>98583-0961</h3>
+
+    <%for(let user of users){%>
+        <h1>
+            Nome: <%=user.nome%>
+        </h1>
+
+        <h3>
+            Telefone: <%=user.tel%>
+        </h3>
+
+        <% } %>
 </body>
 
 </html>
