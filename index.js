@@ -31,6 +31,10 @@ app.get('/', (req, res) => {
     // res.render('users', user) // também podemos passar um objeto, que da a mesma coisa
 });
 
+app.get('/about', (req, res) => {
+    res.render('about')
+})
+
 
 app.listen(3000, () => {
     console.log("Server running on port 3000");
